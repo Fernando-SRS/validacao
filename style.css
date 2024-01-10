@@ -1,45 +1,60 @@
 * {
+    margin: 0px;
     box-sizing: border-box;
-}
-body {
-    margin: 0;
-}
-.screen {
-    display: flex;
-    height: 100vh;
-}
-.leftside {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.leftside img {
-    max-width: 500px;
-    height: auto;
-}
-.rightside {
-    width: 400px;
-    background-color: #DDD;
-    padding: 50px;
-}
-.rightside label {
-    display: block;
-    margin-bottom: 20px;
-}
-.rightside input {
-    width: 100%;
-    border: 1px solid #999;
-    border-radius: 5px;
-    padding: 8px;
-    font-size: 14px;
-    outline: 0;
+    background-color: #fcfbfb;
 }
 
-.error {
-    font-size: 11px;
-    background-color: #FF0000;
-    color: #FFF;
-    padding: 4px;
-    border-radius: 5px;
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    width: 350px;
+    height: 200px;
+    background-image: url('img_jlm.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+
+.efeito {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    display: block;
+    border-radius: 50%;
+    border: 12px solid blue;
+    border-top: 12px solid transparent;
+    animation: loading 1s linear 5;
+    border-top: -50px;
+}
+
+.check {
+    width: 70px;
+    height: 70px;
+    background-image: url('check.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 90%;
+    bottom: 0;
+    width: 100%;
+    font-family: monospace;
+}
+@keyframes loading{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
