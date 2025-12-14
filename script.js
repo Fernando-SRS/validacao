@@ -4,7 +4,7 @@ let button = document.querySelector('.button')
 
 function teste() {
 carregando.classList.remove('efeito');
-carregando.classList.add('nocheck')
+/* carregando.classList.add('check') acesso removido primeiro app automouse g4*/          
 };
 
 setTimeout(teste, 4000);
