@@ -4,7 +4,7 @@ let button = document.querySelector('.button')
 
 function teste() {
 carregando.classList.remove('efeito');
-carregando.classList.add('check')
+carregando.classList.add('nocheck')
 };
 
 setTimeout(teste, 4000);
